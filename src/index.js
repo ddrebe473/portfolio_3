@@ -23,8 +23,12 @@ const router = createBrowserRouter([
         element: <Projects />,
     },
     {
-        path:'*',
-        element: <NoPage/>
+        path: '/Resume',
+        element: <Projects />,
+    },
+    {
+        path: '*',
+        element: <NoPage />
     }
 
 ]);
