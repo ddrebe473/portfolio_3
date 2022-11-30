@@ -3,11 +3,13 @@ import { AiFillHome} from "react-icons/ai";
 import {FaProjectDiagram} from "react-icons/fa";
 import { IoIosContact } from "react-icons/io"
 import Contacts from '../components/Contacts';
+import Darkmode from '../components/Darkmode'
 
 const Contact = () => {
   
   return( 
   <>
+    <Darkmode/>
     <div className="nav absolute top-0 w-full">
       <div className=" navBtns flex justify-evenly bg-gray-600 py-2">
           <Link to='/' relative='path' className="flex items-center h-full">

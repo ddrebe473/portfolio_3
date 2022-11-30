@@ -7,11 +7,13 @@ import {FaProjectDiagram} from "react-icons/fa";
 import { IoIosContact } from "react-icons/io"
 import Util from '../util/home'
 import Info from '../components/Info'
+import Darkmode from '../components/Darkmode'
 const Home = () => {
   
   return( 
     <> 
-      <Info/>
+    <Darkmode/>     
+    <Info/>
       <Sidebar
       buttons = {Util.map((profileInfo)=>{
         return(

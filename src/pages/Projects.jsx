@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { AiFillHome} from "react-icons/ai";
 import {FaProjectDiagram} from "react-icons/fa";
 import { IoIosContact } from "react-icons/io"
+import Darkmode from '../components/Darkmode'
 
 function Projects() {
   const buttons = () => {
@@ -12,6 +13,7 @@ function Projects() {
 
   return( 
   <> 
+    <Darkmode/>
     <Sidebar
     buttons = {buttons()}
     />
