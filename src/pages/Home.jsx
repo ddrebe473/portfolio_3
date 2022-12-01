@@ -2,14 +2,13 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import Sidebar from '../components/Sidebar'
 import Profile from '../components/Profile'
-import { AiFillHome} from "react-icons/ai";
-import {FaProjectDiagram} from "react-icons/fa";
+import { AiFillHome } from "react-icons/ai";
+import { FaProjectDiagram } from "react-icons/fa";
 import { IoIosContact } from "react-icons/io"
 import Util from '../util/home'
 import Info from '../components/Info'
 import Darkmode from '../components/Darkmode'
 const Home = () => {
-  
   return( 
     <> 
     <Darkmode/>     
