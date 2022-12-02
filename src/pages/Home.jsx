@@ -13,27 +13,26 @@ import TopBar from '../components/TopBar'
 const Home = () => {
     return (
         <>
-            {/* <Darkmode /> */}
-            {/* <Info /> */}
+            <Darkmode />
+            <Info />
             <Sidebar
                 buttons={Util.map((profileInfo) => {
-                    return (
-                        <div key={profileInfo.id.toString()}>
-                            <button
-                                onClick={profileInfo.onClick}
-                                className="text font-bold bg-white opacity-50 w-52 h-20 text-4xl rounded">
-                                {profileInfo.text}
-                            </button>
-                        </div>
-                    )
+                    return (<button
+                        onClick={profileInfo.onClick}
+                        className="text font-bold bg-white opacity-50 w-52 h-20 text-4xl rounded">
+                        {profileInfo.text}
+                    </button>)
                 })}
             />
-            <Profile
-                img="/images/me.jpg"
-                name="Dylan Drebes"
-            />
-            <TopBar />
-        </>
+
+            <div className="mainContent">
+                <Profile
+                    img="/images/me.jpg"
+                    name="Dylan Drebes"
+                />
+            </div>
+
+        </div>
     )
 }
 export default Home;

@@ -13,13 +13,13 @@ function Projects() {
         return
     }
 
-    return (
-        <>
-            <Darkmode />
-            <Sidebar buttons={buttons()}/>
-            <TopBar />
-        </>
-    )
+    return (<>
+        <TopBar />
+        <Sidebar buttons={buttons()}/>
+        <div className="mainContent">
+
+        </div>
+    </>)
 }
 
 export default Projects
