@@ -13,8 +13,8 @@ import TopBar from '../components/TopBar'
 const Home = () => {
     return (
         <>
-            <Darkmode />
-            <Info />
+            {/* <Darkmode /> */}
+            {/* <Info /> */}
             <Sidebar
                 buttons={Util.map((profileInfo) => {
                     return (
