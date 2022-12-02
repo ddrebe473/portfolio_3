@@ -12,9 +12,10 @@ import { RiNewspaperFill } from "react-icons/ri";
 import TopBar from '../components/TopBar'
 const Home = () => {
     return (
-        <>
-            <Darkmode />
-            <Info />
+        <div 
+            className='about-parent h-screen' 
+        >
+            <TopBar />
             <Sidebar
                 buttons={Util.map((profileInfo) => {
                     return (<button
@@ -31,7 +32,8 @@ const Home = () => {
                     name="Dylan Drebes"
                 />
             </div>
-        </>
+
+        </div>
     )
 }
 export default Home;
