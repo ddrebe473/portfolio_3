@@ -31,8 +31,7 @@ const Home = () => {
                     name="Dylan Drebes"
                 />
             </div>
-
-        </div>
+        </>
     )
 }
 export default Home;
