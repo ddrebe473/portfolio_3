@@ -37,6 +37,8 @@ function Resume() {
             </Link>
         </div>
       </div>
+
+    <Skills/>
   </>
   )
 }
