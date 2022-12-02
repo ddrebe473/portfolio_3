@@ -4,11 +4,6 @@ import Profile from '../components/Profile'
 import Util from '../util/home'
 import Info from '../components/Info'
 import Darkmode from '../components/Darkmode'
-import { Link } from 'react-router-dom';
-import { AiFillHome } from "react-icons/ai";
-import { FaProjectDiagram } from "react-icons/fa";
-import { IoIosContact } from "react-icons/io"
-import { RiNewspaperFill } from "react-icons/ri";
 import TopBar from '../components/TopBar'
 const Home = () => {
     return (
