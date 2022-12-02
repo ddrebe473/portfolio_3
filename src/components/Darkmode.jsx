@@ -6,12 +6,12 @@ function DarkTheme() {
   if (storedTheme == null) {
     localStorage.setItem("Theme", "light");
   }
-  useEffect(() => {
-    setTheme(storedTheme);
-  }, []);
+  // useEffect(() => {
+  //   setTheme(storedTheme);
+  // }, []);
 
   const handleClick = () => {
-    if (storedTheme == "light" || storedTheme === null) {
+    if (storedTheme === "light" || storedTheme === null) {
       localStorage.removeItem("Theme");
       localStorage.setItem("Theme", "dark");
       setTheme("dark");
@@ -22,12 +22,11 @@ function DarkTheme() {
     }
   };
   return (
-    <div className="home">
-      <h2>{theme}</h2>
-      <button className={`button-${Theme}`} onClick={handleClick}>
-        Click Me
-      </button>
-    </div>
+  <label className={`button-${theme} switch`} onClick={handleClick}>
+  <input type="checkbox"/>
+  <span className="slider round"></span>
+  </label>
+
   );
 };
 

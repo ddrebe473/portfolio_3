@@ -7,7 +7,7 @@ import Contact from './pages/Contact';
 import Home from './pages/Home';
 import Projects from './pages/Projects';
 import NoPage from './pages/NoPage';
-
+import Resume from './pages/Resume';
 
 const router = createBrowserRouter([
     {
@@ -19,17 +19,17 @@ const router = createBrowserRouter([
         element: <Contact />,
     },
     {
-        path: '/Projects',
+        path: '/projects',
         element: <Projects />,
     },
     {
-        path: '/Resume',
-        element: <Projects />,
+        path: '/resume',
+        element: <Resume/>,
     },
     {
         path: '*',
         element: <NoPage />
-    }
+    },
 
 ]);
 
