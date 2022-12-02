@@ -3,7 +3,6 @@ import { AiFillHome } from "react-icons/ai";
 import { FaProjectDiagram } from "react-icons/fa";
 import { IoIosContact } from "react-icons/io"
 import { RiNewspaperFill } from "react-icons/ri";
-import {BsFillBarChartFill} from "react-icons/bs";
 import Contacts from '../components/Contacts';
 import Darkmode from '../components/Darkmode'
 
@@ -27,11 +26,6 @@ const Contact = () => {
             <Link to='/resume' relative='path' className="flex items-center h-full">
                 Resume
                 <RiNewspaperFill/>
-            </Link>
-            
-            <Link to='/skills' relative='path' className="flex items-center h-full">
-                Skills
-                <BsFillBarChartFill/>
             </Link>
           
             <Link to='/contact' relative='path' className="flex items-center h-full">
