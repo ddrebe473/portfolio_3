@@ -6,12 +6,16 @@ import { IoIosContact } from "react-icons/io"
 import { RiNewspaperFill } from "react-icons/ri";
 import Skills from '../components/Skills';
 import TopBar from '../components/TopBar';
+import Sidebar from '../components/Sidebar';
 
 function Resume() {
     return (
         <>
             <TopBar />
-            <Skills />
+            <Sidebar buttons={[]}/>
+            <div className="mainContent">
+                <Skills />
+            </div>
         </>
     )
 }

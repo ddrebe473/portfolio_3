@@ -1,14 +1,10 @@
 import React from 'react';
 const Sidebar = ({ buttons }) => {
-
     return (
-        <div className="about_parent h-screen flex flex-col justify-end">
-            <div className="h-full about bg-blue-700 w-80 absolute my-5 z-10">
-                <div className="buttons flex items-center h-full flex-col justify-evenly">
-                    {buttons}
-                </div>
-            </div>
+        // <div className="sidebarComponent about-parent fixed top-0 left-0 bottom-0 h-screen bg-blue-700 w-80 flex flex-col items-center justify-evenly">
+        <div className="sidebarComponent bg-blue-700 w-40 flex flex-col items-center justify-evenly">
+            {buttons}
         </div>
-    );
+    )
 };
 export default Sidebar

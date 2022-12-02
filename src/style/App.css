@@ -1,49 +1,45 @@
 * {
+    --sidebar-height: 100vh;
+    --sidebar-mobile-height: 10vh;
+    --sidebar-width: 20rem;
+    --nav-height: 3rem;
+    --intro-time: 1500ms;
     overflow: hidden;
+    
 }
 
-.about {
-    animation-name: about-parent;
-    animation-duration: 1.5s;
-    animation: about-parent 2800ms ease-in-out 0s forwards
+#root {
+    height: 100vh;
 }
 
 @keyframes about-parent {
     from {
-        top: 100rem
+        top: -100vh;
     }
 
     to {
-        top: 0rem
+        top: 0vh;
     }
 }
 
-.me {
-    top: 0rem;
-    position: absolute;
-    left: 0rem;
-}
+@keyframes about-parent-mobile {
+    from {
+        left: -100vh;
+    }
 
-.nav {
-    animation-name: navigation;
-    animation-duration: 1.5s;
-    animation: navigation 2800ms ease-in-out 0s forwards
+    to {
+        left: 0vh;
+    }
 }
 
 @keyframes navigation {
     from {
-        top: -10rem
+        top: -10rem;
     }
 
     to {
-        top: 0rem
+        top: 0rem;
     }
-}
-
-img {
-    animation-name: image;
-    animation-duration: 2s;
-    animation: image 2800ms ease-in-out 0s forwards
 }
 
 @keyframes image {
@@ -56,20 +52,52 @@ img {
     }
 }
 
-html {
-    height: 100%;
+.nav {
+    height: var(--nav-height) !important;
+    animation: navigation var(--intro-time) ease-in-out 0s forwards;
 }
 
-button:focus {
-    opacity: 100;
+.sidebarComponent {
+    animation: about-parent var(--intro-time) ease-in-out 0s forwards;
+
+    position: absolute;
+    height: var(--sidebar-height);    
+    width: var(--sidebar-width);
 }
 
-button {
-    display: inline-block;
-    cursor: pointer;
+.mainContent {
+    position: absolute;
+    left: var(--sidebar-width);
+    width: calc(100% - var(--sidebar-width));
+    height: calc(100%);
 }
 
 @media only screen and (max-width: 1080px) {
+
+    .navLink {
+        font-size: 1rem;
+    }
+
+    .sidebarComponent {
+        animation: about-parent-mobile var(--intro-time) ease-in-out 0s forwards;
+        height: var(--sidebar-mobile-height);
+        width: 100vw;
+        bottom: 0;
+        flex-direction: row;
+    }
+
+    .sidebarComponent button {
+        width: 30%;
+        height: 70%;
+        font-size: 2rem;
+
+    }
+
+    .mainContent {
+        left: 0;
+        width: 100vw;
+        height: calc(100vh - var(--sidebar-mobile-height) - var(--nav-height));
+    }
 
     .about {
         width: 100%;
@@ -84,6 +112,7 @@ button {
     }
 
     .name {
+        animation: image var(--intro-time) ease-in-out 0s forwards;
         font-size: 2rem;
     }
 
@@ -128,6 +157,41 @@ input[type="submit"] {
     display: flex;
     flex-direction: row;
     align-self: flex-start;
+}
+
+.profile {
+    height: 100%;
+}
+
+.about {
+    /* animation-name: about-parent;
+    animation-duration: 1.5s;
+    animation: about-parent var(--intro-time) ease-in-out 0s forwards */
+}
+
+.me {
+    /* top: 0rem; */
+    /* position: absolute; */
+    /* left: 0rem; */
+}
+
+img {
+    animation-name: image;
+    animation-duration: 2s;
+    animation: image var(--intro-time) ease-in-out 0s forwards
+}
+
+html {
+    /* height: 100%; */
+}
+
+button:focus {
+    opacity: 100;
+}
+
+button {
+    display: inline-block;
+    cursor: pointer;
 }
 
 @media only screen and (max-height: 650px) {
