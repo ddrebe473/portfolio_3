@@ -222,3 +222,13 @@
          max-width: 100%;
      }
  }
+
+ .projectRepo {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 1rem;
+        background-color: lightblue;
+        cursor: pointer;
+ }
