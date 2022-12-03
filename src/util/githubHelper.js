@@ -1,8 +1,7 @@
 
-
 import { Octokit, App } from "octokit";
 
-const TOKEN = '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'
+const TOKEN = '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';
 let owner = null
 
 const REPO_LIST = [
@@ -23,7 +22,7 @@ const login = async () => {
     console.log("Hello, %s", loginData.data.login);
 }
 
-const getRepos = async (token) => {
+const getRepos = async () => {
     const repoRes = await octokit.request(`GET /user/repos?visibility=public&sort=updated&per_page=100`, {})
     console.log(repoRes)
     return repoRes.data.filter(repo => REPO_LIST.includes(repo.name))
