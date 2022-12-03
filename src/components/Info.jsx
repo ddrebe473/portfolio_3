@@ -3,22 +3,15 @@ import Util from '../util/home'
 
 
 // test from Luke
-const Info = () => {
+const Info = (props) => {
     return (
-        <>
-            {Util.map((theInfo)=>{
-                return(
-                <div key={theInfo.id.toString()}>
-                    <h3
-                    onClick={theInfo.onClick} 
-                    className="text font-bold bg-white opacity-50 w-52 h-20 text-4xl rounded absolute"
-                    >
-                        {theInfo.info}
-                    </h3>
-                </div>
-                )
-            })}
-        </>
+        <div key={props.info.id.toString()}>
+            <h3
+            className="text font-bold bg-white opacity-50 w-52 h-20 text-4xl rounded absolute"
+            >
+                {props.info.info}
+            </h3>
+        </div>
     )
 }
 
