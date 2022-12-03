@@ -3,6 +3,7 @@ import ReactTypingEffect from 'react-typing-effect';
 
 const Profile = (props) => {
 
+
     return (
         <div className='profile flex flex-col items-center relative'>
             {/* <div className="me relative flex justify-center items-center pt-20 right-1"> */}
@@ -29,7 +30,7 @@ const Profile = (props) => {
             />
 
             <div className='infoContainer bg-red-400 w-[50%] h-[30%] mt-[4rem]'>
-                    
+                {props.info.text}
             </div>
             
         </div>

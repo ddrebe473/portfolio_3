@@ -12,7 +12,7 @@ import Resume from './pages/Resume';
 const router = createBrowserRouter([
     {
         path: '/',
-        element: <Home />,
+        element: <Home/>,
     },
     {
         path: '/contact',
@@ -20,7 +20,7 @@ const router = createBrowserRouter([
     },
     {
         path: '/projects',
-        element: <Projects />,
+        element: <Projects/>,
     },
     {
         path: '/resume',
@@ -28,7 +28,7 @@ const router = createBrowserRouter([
     },
     {
         path: '*',
-        element: <NoPage />
+        element: <NoPage/>
     },
 
 ]);
