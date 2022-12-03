@@ -27,6 +27,11 @@ const Profile = (props) => {
                     </h1>)
                 }}
             />
+
+            <div className='infoContainer bg-red-400 w-[50%] h-[30%] mt-[4rem]'>
+
+            </div>
+            
         </div>
     )
 }
