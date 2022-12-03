@@ -12,11 +12,10 @@ const Home = () => {
         >
             <TopBar />
             <Sidebar
-                buttons={Util.map((profileInfo) => {
-                    return (<button
-                        onClick={profileInfo.onClick}
-                        className="text font-bold bg-white opacity-50 w-52 h-20 text-4xl rounded">
-                        {profileInfo.text}
+                buttons={Object.keys(Util).map((infoKey) => {
+                    return (<button 
+                            className="text font-bold bg-white opacity-50 w-52 h-20 text-4xl rounded">
+                        {infoKey}
                     </button>)
                 })}
             />
