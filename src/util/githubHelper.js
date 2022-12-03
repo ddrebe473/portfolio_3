@@ -2,7 +2,7 @@
 
 import { Octokit, App } from "octokit";
 
-const TOKEN = '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'
+const TOKEN = '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'
 let owner = null
 
 const REPO_LIST = [
