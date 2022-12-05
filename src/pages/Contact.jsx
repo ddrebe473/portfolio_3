@@ -1,5 +1,4 @@
 import Contacts from '../components/Contacts';
-import Darkmode from '../components/Darkmode'
 import Sidebar from '../components/Sidebar';
 import TopBar from '../components/TopBar';
 

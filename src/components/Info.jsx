@@ -1,6 +1,4 @@
 import React from 'react'
-import Util from '../util/home'
-
 
 // test from Luke
 const Info = (props) => {

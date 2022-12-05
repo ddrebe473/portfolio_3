@@ -2,7 +2,7 @@ import React from 'react'
 import { useEffect } from 'react';
 import Sidebar from '../components/Sidebar'
 import TopBar from '../components/TopBar';
-
+import images from '../util/imgs'
 import GithubHelper from '../util/githubHelper'
 
 function Projects() {
@@ -14,7 +14,7 @@ function Projects() {
         const repos = await GithubHelper.getRepos();
         setProjects(repos);
     }        
-    
+
     useEffect(() => {
         loadProjects()
     }, [])
@@ -28,10 +28,15 @@ function Projects() {
         <Sidebar buttons={buttons()}/>
         <div className="mainContent">
             {projects.map((project) => {
-                return <div className="projectRepo" onClick={() => {
+
+                const theImg = images[project.name]
+                console.log(theImg, 'name:', project.name)
+
+                return <div className="projectRepo" key={project.name} onClick={() => {
                     window.open(project.url.replace('//api.', '//www.').replace('repos/', ''));
                 }}>
                     <h1>{project.name}</h1>
+                    <img src={theImg.img} alt={images.title} />
                     <p>{project.description ?? 'Description'}</p>
                 </div>
             })}

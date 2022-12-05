@@ -6,7 +6,7 @@ let owner = null
 
 const REPO_LIST = [
     'tour_api',
-    'task-manager2',
+    'task_manager2',
     'EnglishSpanishTranslation',
     'Calculator',
     'Crapstone',    

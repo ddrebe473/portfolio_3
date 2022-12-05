@@ -1,5 +1,4 @@
 import React from 'react'
-import Skills from '../components/Skills';
 import TopBar from '../components/TopBar';
 import Sidebar from '../components/Sidebar';
 import Resumepdf from '../../src/Resume.pdf'
@@ -17,7 +16,6 @@ function Resume() {
                     height="100%"
                     width="100%"
                 ></iframe>
-                <Skills />
             </div>
         </>
     )

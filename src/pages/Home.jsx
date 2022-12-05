@@ -2,16 +2,11 @@ import React from 'react'
 import Sidebar from '../components/Sidebar'
 import Profile from '../components/Profile'
 import Util from '../util/home'
-import Info from '../components/Info'
-import Darkmode from '../components/Darkmode'
 import TopBar from '../components/TopBar'
 import {useState} from 'react'
 const Home = () => {
 
     const [curInfo, setCurInfo] = useState(Object.keys(Util)[0])
-    // console.log(curInfo, Util[curInfo])
-
-
     return (
         <div 
             className='about-parent h-screen' 
@@ -29,7 +24,7 @@ const Home = () => {
                 })}
             />
 
-            <div className="mainContent">
+            <div className="mainContent text-6xl">
                 <Profile
                     img="/images/me.jpg"
                     name="Dylan Drebes"

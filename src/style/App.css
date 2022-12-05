@@ -5,7 +5,6 @@
      --nav-height: 3rem;
      --intro-time: 1500ms;
      overflow: hidden;
-
  }
 
  #root {
@@ -66,10 +65,11 @@
  }
 
  .mainContent {
-     position: absolute;
-     left: var(--sidebar-width);
-     width: calc(100% - var(--sidebar-width));
-     height: calc(100%);
+    position: absolute;
+    left: var(--sidebar-width);
+    width: calc(100% - var(--sidebar-width));
+    height: calc(100%);
+    overflow: scroll;
  }
 
  @media only screen and (max-width: 1080px) {
@@ -160,26 +160,10 @@
      height: 100%;
  }
 
- .about {
-     /* animation-name: about-parent;
-    animation-duration: 1.5s;
-    animation: about-parent var(--intro-time) ease-in-out 0s forwards */
- }
-
- .me {
-     /* top: 0rem; */
-     /* position: absolute; */
-     /* left: 0rem; */
- }
-
  img {
      animation-name: image;
      animation-duration: 2s;
      animation: image var(--intro-time) ease-in-out 0s forwards
- }
-
- html {
-     /* height: 100%; */
  }
 
  button:focus {
@@ -229,6 +213,5 @@
         justify-content: space-between;
         align-items: center;
         margin-top: 1rem;
-        background-color: lightblue;
         cursor: pointer;
  }
