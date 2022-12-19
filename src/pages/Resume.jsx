@@ -10,6 +10,7 @@ function Resume() {
             <Sidebar buttons={[]}/>
             <div className="mainContent">
                 <iframe
+                    title="test"
                     src={Resumepdf}
                     height="100%"
                     width="100%"
