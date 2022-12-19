@@ -11,8 +11,6 @@ function Resume() {
             <div className="mainContent">
                 <iframe
                     src={Resumepdf}
-                    frameBorder="0"
-                    scrolling="auto"
                     height="100%"
                     width="100%"
                 ></iframe>

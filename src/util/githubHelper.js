@@ -1,8 +1,7 @@
 
-import { Octokit, App } from "octokit";
+import { Octokit} from "octokit";
 
 const TOKEN = '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';
-let owner = null
 
 const REPO_LIST = [
     'tour_api',
@@ -18,7 +17,6 @@ const octokit = new Octokit({ auth: TOKEN });
 const login = async () => {
     // Compare: https://docs.github.com/en/rest/reference/users#get-the-authenticated-user
     const loginData = await octokit.rest.users.getAuthenticated();
-    owner = loginData.data.login
     console.log("Hello, %s", loginData.data.login);
 }
 
